@@ -1,0 +1,31 @@
+// 🌙 QuranTech - Language Switcher
+
+const translations = {
+  ar: {
+    title: "📖 قرآن تك",
+    welcome: "مرحبًا بك في منصّة قرآن تك",
+    desc: "هذه المنصّة تساعدك على قراءة القرآن والتعلم بسهولة عبر التقنية الحديثة.",
+  },
+  en: {
+    title: "📖 QuranTech",
+    welcome: "Welcome to QuranTech Platform",
+    desc: "This platform helps you read and learn the Quran easily using modern technology.",
+  },
+  fr: {
+    title: "📖 QuranTech",
+    welcome: "Bienvenue sur la plateforme QuranTech",
+    desc: "Cette plateforme vous aide à lire et apprendre le Coran facilement grâce à la technologie moderne.",
+  },
+};
+
+const switcher = document.getElementById("languageSwitcher");
+const title = document.getElementById("title");
+const welcome = document.getElementById("welcome");
+const desc = document.getElementById("desc");
+
+switcher.addEventListener("change", (e) => {
+  const lang = e.target.value;
+  title.textContent = translations[lang].title;
+  welcome.textContent = translations[lang].welcome;
+  desc.textContent = translations[lang].desc;
+});
