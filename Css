@@ -1,0 +1,39 @@
+/* 🌙 QuranTech - Style File */
+
+body {
+  font-family: "Tahoma", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f9f6;
+  color: #222;
+  text-align: center;
+}
+
+header {
+  background: #1c4d3f;
+  color: white;
+  padding: 15px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+#languageSwitcher {
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background: #1c4d3f;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
